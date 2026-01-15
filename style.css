@@ -235,6 +235,59 @@ h2 {
 .dot.active {
   opacity: 1;
 }
+/* ----------------------------------------------------
+   WRAPPER
+---------------------------------------------------- */
+.slide-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 25px;
+}
+
+.slide-story {
+  flex: 1;
+  max-width: 800px;
+  height: 500px;
+  background: rgba(221, 0, 255, 0.1);
+  color: #000000;
+  padding: 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(6px);
+}
+
+.slide-story h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.slide-story p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ----------------------------------------------------
+   WRAPPER for  mobile
+---------------------------------------------------- */
+@media (max-width: 768px) {
+  .slide-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .slide-story {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
 
 
 /* ----------------------------------------------------
