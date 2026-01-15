@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Stories</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔷 HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html">Our Stories</a></li>
+        </ul>
+        <a href="https://wa.me/447000000000" class="btn">WhatsApp Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🔷 STORIES GALLERY -->
+  <section class="stories-gallery">
+    <div class="container">
+      <h2>Student Stories</h2>
+      <div class="photo-grid">
+        <div class="photo-item" onclick="openModal('images/pass1.jpg', '“I booked last minute and passed! The instructor was calm and the car was perfect.”')">
+          <img src="images/pass1.jpg" alt="Student 1">
+        </div>
+        <div class="photo-item" onclick="openModal('images/car1.jpg', '“I failed twice before, but this dual-control car gave me the confidence I needed.”')">
+          <img src="images/car1.jpg" alt="Student 2">
+        </div>
+        <div class="photo-item" onclick="openModal('images/pass2.jpg', '“I travelled from another city and passed first time thanks to clear instruction.”')">
+          <img src="images/pass2.jpg" alt="Student 3">
+        </div>
+        <div class="photo-item" onclick="openModal('images/car2.jpg', '“Switching to automatic was the best decision. Passed with full confidence.”')">
+          <img src="images/car2.jpg" alt="Student 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔷 MODAL -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" src="" alt="Expanded Photo">
+    <p id="modal-text"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

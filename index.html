@@ -5,259 +5,298 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>St Albans Driving School</title>
 
-  <!-- LINK TO EXTERNAL CSS -->
+  <!-- ------------------------------------------------------
+       LINK TO EXTERNAL CSS
+  ------------------------------------------------------ -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<!-- Splash -->
-<!-- <div id="splash-screen">
-  <img src="videos/splash.gif" alt="Splash Animation" />
-</div> -->
+<!-- ------------------------------------------------------
+     OPTIONAL SPLASH SCREEN (CURRENTLY DISABLED)
+------------------------------------------------------ -->
 
+<div id="splash-screen">
+  <img src="videos/splash.gif" alt="Splash Animation" />
+</div>
 
 
 <body>
 
-  <!-- 🔷 HEADER (Logo + Navigation + Mobile Hamburger Menu) -->
-  <header class="header">
-    <div class="container nav-container">
+<!-- ======================================================
+     🔷 HEADER (Logo + Navigation + Mobile Hamburger Menu)
+====================================================== -->
+<header class="header">
+  <div class="container nav-container">
 
-      <!-- LOGO (Replace with your own logo image) -->
-      <div class="logo">
-        <img src="images/logo.png" alt="St Albans Driving School Logo">
-      </div>
-
-      <!-- HAMBURGER ICON (Visible only on mobile) -->
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-      <!-- NAVIGATION LINKS (Hidden on mobile until hamburger is clicked) -->
-      <nav class="nav-links" id="navLinks">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#why">Our Pride</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <!-- WHATSAPP CTA BUTTON -->
-        <a href="https://wa.me/447000000000" class="btn">WhatsApp Us</a>
-      </nav>
-
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="images/logo.png" alt="St Albans Driving School Logo">
     </div>
-  </header>
 
-  <!-- 🔷 HERO SECTION (Main Banner) -->
-  <section id="hero" class="hero">
-    <div class="container hero-content">
+    <!-- MOBILE HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-      <!-- HERO TEXT -->
-      <div class="hero-text">
-        <h1>Professional Driving Lessons in St Albans and Hatfield</h1>
-        <p>Your journey to a full license starts here..</p>
+    <!-- NAVIGATION MENU -->
+    <nav class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#why">Our Pride</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-        <!-- HERO CTA BUTTON -->
-        <a href="https://wa.me/447000000000" class="btn">Book Now</a>
-      </div>
+      <!-- WHATSAPP CTA -->
+      <a href="https://wa.me/447000000000" class="btn">WhatsApp Us</a>
+    </nav>
 
-      <!-- HERO IMAGE (Replace with your banner image) -->
-      <div class="hero-image">
-        <img src="images/banner.png" alt="Driving School Banner">
-      </div>
+  </div>
+</header>
 
+
+
+<!-- ======================================================
+     🔷 HERO SECTION (Main Banner)
+====================================================== -->
+<section id="hero" class="hero">
+  <div class="container hero-content">
+
+    <!-- HERO TEXT -->
+    <div class="hero-text">
+      <h1>Professional Driving Lessons in St Albans and Hatfield</h1>
+      <p>Your journey to a full license starts here..</p>
+      <a href="https://wa.me/447000000000" class="btn">Book Now</a>
     </div>
-  </section>
 
-  <!-- 🔷 WHY CHOOSE US SECTION -->
-  <section id="why" class="why">
-    <div class="container">
-      <h2>Our Pride</h2>
-
-      <!-- 3 FEATURE CARDS -->
-      <div class="card-grid">
-        <div class="card">
-          <h3>⚡ Last Minute Bookings</h3>
-          <p>We specialize in emergency test car hire with short notice availability.</p>
-        </div>
-
-        <div class="card">
-          <h3>✅ Qualified ADI Instructors</h3>
-          <p>All instructors are DVSA approved and experienced in test preparation.</p>
-        </div>
-
-        <div class="card">
-          <h3>🚗 Manual & Automatic</h3>
-          <p>Choose between manual or automatic dual-control vehicles.</p>
-        </div>
-      </div>
+    <!-- HERO IMAGE -->
+    <div class="hero-image">
+      <img src="images/banner.png" alt="Driving School Banner">
     </div>
-  </section>
 
-  <!-- 🔷 SERVICES SECTION -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Services</h2>
-
-      <!-- 2 SERVICE CARDS -->
-      <div class="card-grid">
-        <div class="card">
-          <h3>Emergency Test Car Hire</h3>
-          <p>From £180 · Includes 1 hour pre-test lesson</p>
-          <a href="https://wa.me/447000000000" class="btn">Book Now</a>
-        </div>
-
-        <div class="card">
-          <h3>Driving Lessons</h3>
-          <p>£35/hour · Manual & Automatic · Block discounts available</p>
-          <a href="https://wa.me/447000000000" class="btn">Book Lessons</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🔷 FAQ SECTION (Expandable Questions) -->
-  <section id="faq" class="faq">
-    <div class="container">
-      <h2>Frequently Asked Questions</h2>
-
-      <!-- FAQ DROPDOWNS -->
-      <details>
-        <summary>How much does emergency test car hire cost?</summary>
-        <p>Starts from £180 including car, instructor, and pre-test lesson.</p>
-      </details>
-
-      <details>
-        <summary>Do you provide both manual and automatic cars?</summary>
-        <p>Yes, both types are available depending on your test type.</p>
-      </details>
-
-      <details>
-        <summary>How far in advance do I need to book?</summary>
-        <p>We accept short notice bookings, but earlier is better for availability.</p>
-      </details>
-    </div>
-  </section>
+  </div>
+</section>
 
 
 
-
-<!-- ------------------------------------------------------
-  SLIDES SECTION
------------------------------------------------------- -->
-
-<section id="gallery" class="gallery">
+<!-- ======================================================
+     🔷 WHY CHOOSE US SECTION
+====================================================== -->
+<section id="why" class="why">
   <div class="container">
-    <h2>Our Stories</h2>
+    <h2>Our Pride</h2>
 
-<!-- SLIDE 1 -->
-<div class="slide fade">
-  <div class="slide-wrapper">
+    <!-- FEATURE CARDS -->
+    <div class="card-grid">
 
-    <div class="slide-image">
-      <img src="images/pass1.jpg" alt="Passed Test Certificate">
-    </div>
-
-    <div class="slide-story">
-      <h3>Success Story</h3>
-      <p>“Despite the short notice, the instructor’s steady guidance and the high-quality vehicle ensured I felt confident enough to pass my test successfully. I secured a last-minute slot and passed with ease, thanks to a remarkably calm instructor and a car that was a total dream to drive. From a late booking to a successful pass, the combination of professional, patient tuition and a modern car made the whole process seamless. The instructor's composed teaching style and the excellent condition of the car were instrumental in helping me pass, even on a tight schedule. I couldn't have asked for a better experience; the booking was last-minute, the instructor was incredibly patient, and I walked away with a pass!”</p>
-    </div>
-
-  </div>
-</div>
-
-<!-- SLIDE 2 -->
-<div class="slide fade">
-  <div class="slide-wrapper">
-
-    <div class="slide-image">
-      <img src="images/car1.jpg" alt="Dual Control Car">
-    </div>
-
-    <div class="slide-story">
-      <h3>Success Story</h3>
-      <p>“I failed twice before, but this dual‑control car gave me the confidence I needed. Passed with only 3 minors.”</p>
-    </div>
-
-  </div>
-</div>
-
-<!-- SLIDE 3 -->
-<div class="slide fade">
-  <div class="slide-wrapper">
-
-    <div class="slide-image">
-      <img src="images/pass2.jpg" alt="Happy Student">
-    </div>
-
-    <div class="slide-story">
-      <h3>Success Story</h3>
-      <p>“I travelled from another city for this test. The instructor explained everything clearly and I passed first time.”</p>
-    </div>
-
-  </div>
-</div>
-
-<!-- SLIDE 4 -->
-<div class="slide fade">
-  <div class="slide-wrapper">
-
-    <div class="slide-image">
-      <img src="images/car2.jpg" alt="Automatic Car">
-    </div>
-
-    <div class="slide-story">
-      <h3>Success Story</h3>
-      <p>“Switching to automatic was the best decision. Smooth car, friendly instructor — passed with full confidence.”</p>
-    </div>
-
-  </div>
-</div>
-
-
-      <!-- Navigation dots -->
-      <div class="dots">
-        <span class="dot" onclick="showSlide(0)"></span>
-        <span class="dot" onclick="showSlide(1)"></span>
-        <span class="dot" onclick="showSlide(2)"></span>
-        <span class="dot" onclick="showSlide(3)"></span>
+      <div class="card">
+        <h3>⚡ Last Minute Bookings</h3>
+        <p>We specialize in emergency test car hire with short notice availability.</p>
       </div>
+
+      <div class="card">
+        <h3>✅ Qualified ADI Instructors</h3>
+        <p>All instructors are DVSA approved and experienced in test preparation.</p>
+      </div>
+
+      <div class="card">
+        <h3>🚗 Manual & Automatic</h3>
+        <p>Choose between manual or automatic dual-control vehicles.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
 
-  <!-- 🔷 CONTACT SECTION -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact & Booking</h2>
 
-      <!-- 2 CONTACT CARDS -->
-      <div class="card-grid">
-        <div class="card">
-          <h3>Book Emergency Test Car</h3>
-          <p>From £180 · Includes car + instructor</p>
-          <a href="https://wa.me/447000000000" class="btn">WhatsApp to Book</a>
+<!-- ======================================================
+     🔷 SERVICES SECTION
+====================================================== -->
+<section id="services" class="services">
+  <div class="container">
+    <h2>Our Services</h2>
+
+    <!-- SERVICE CARDS -->
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Emergency Test Car Hire</h3>
+        <p>From £180 · Includes 1 hour pre-test lesson</p>
+        <a href="https://wa.me/447000000000" class="btn">Book Now</a>
+      </div>
+
+      <div class="card">
+        <h3>Driving Lessons</h3>
+        <p>£35/hour · Manual & Automatic · Block discounts available</p>
+        <a href="https://wa.me/447000000000" class="btn">Book Lessons</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ======================================================
+     🔷 FAQ SECTION (Expandable Questions)
+====================================================== -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>How much does emergency test car hire cost?</summary>
+      <p>Starts from £180 including car, instructor, and pre-test lesson.</p>
+    </details>
+
+    <details>
+      <summary>Do you provide both manual and automatic cars?</summary>
+      <p>Yes, both types are available depending on your test type.</p>
+    </details>
+
+    <details>
+      <summary>How far in advance do I need to book?</summary>
+      <p>We accept short notice bookings, but earlier is better for availability.</p>
+    </details>
+
+  </div>
+</section>
+
+
+
+<!-- ======================================================
+     🔷 SLIDES SECTION (Stories + Images)
+====================================================== -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <h2>Our Stories</h2>
+
+    <!-- SLIDE 1 -->
+    <div class="slide fade">
+      <div class="slide-wrapper">
+
+        <div class="slide-image">
+          <img src="images/pass1.jpg" alt="Passed Test Certificate">
         </div>
 
-        <div class="card">
-          <h3>Book Driving Lessons</h3>
-          <p>£35/hour · Manual & Automatic</p>
-          <a href="https://wa.me/447000000000" class="btn">WhatsApp for Lessons</a>
+        <div class="slide-story">
+          <h3>Success Story</h3>
+          <p>“From a late booking to a successful pass, the combination of professional, very proffestional instructor”</p>
         </div>
+
       </div>
     </div>
-  </section>
 
-  <!-- 🔷 FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 St Albans Driving School · All rights reserved.</p>
+    <!-- SLIDE 2 -->
+    <div class="slide fade">
+      <div class="slide-wrapper">
+
+        <div class="slide-image">
+          <img src="images/car1.jpg" alt="Dual Control Car">
+        </div>
+
+        <div class="slide-story">
+          <h3>Success Story</h3>
+          <p>“I failed twice before, but this dual‑control car gave me the confidence I needed. Passed with only 3 minors.”</p>
+        </div>
+
+      </div>
     </div>
-  </footer>
 
-  <!-- LINK TO EXTERNAL JS -->
-  <script src="script.js"></script>
+    <!-- SLIDE 3 -->
+    <div class="slide fade">
+      <div class="slide-wrapper">
+
+        <div class="slide-image">
+          <img src="images/pass2.jpg" alt="Happy Student">
+        </div>
+
+        <div class="slide-story">
+          <h3>Success Story</h3>
+          <p>“I travelled from another city for this test. The instructor explained everything clearly and I passed first time.”</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="slide fade">
+      <div class="slide-wrapper">
+
+        <div class="slide-image">
+          <img src="images/car2.jpg" alt="Automatic Car">
+        </div>
+
+        <div class="slide-story">
+          <h3>Success Story</h3>
+          <p>“Switching to automatic was the best decision. Smooth car, friendly instructor — passed with full confidence.”</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SLIDES DOTS -->
+    <div class="dots">
+      <span class="dot" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+      <span class="dot" onclick="showSlide(3)"></span>
+    </div>
+
+    <!-- VIEW MORE STORIES BUTTON -->
+<div style="text-align: center; margin-top: 30px;">
+  <a href="stories.html" class="btn">View More Stories</a>
+</div>
+
+
+  </div>
+</section>
+
+
+
+<!-- ======================================================
+     🔷 CONTACT SECTION
+====================================================== -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact & Booking</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Book Emergency Test Car</h3>
+        <p>From £180 · Includes car + instructor</p>
+        <a href="https://wa.me/447000000000" class="btn">WhatsApp to Book</a>
+      </div>
+
+      <div class="card">
+        <h3>Book Driving Lessons</h3>
+        <p>£35/hour · Manual & Automatic</p>
+        <a href="https://wa.me/447000000000" class="btn">WhatsApp for Lessons</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ======================================================
+     🔷 FOOTER
+====================================================== -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 St Albans Driving School · All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- ------------------------------------------------------
+     LINK TO EXTERNAL JS
+------------------------------------------------------ -->
+<script src="script.js"></script>
 
 </body>
 </html>
