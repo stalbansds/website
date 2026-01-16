@@ -173,8 +173,8 @@ h2 {
 @media screen and (max-width: 600px) {
   .glass-box {
     margin: 40px auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
 
   .hero-description {
