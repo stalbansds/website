@@ -129,6 +129,7 @@ h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding:25px;
 }
 
 .hero-text {
@@ -137,7 +138,7 @@ h2 {
 }
 
 .hero-text h1 {
-  font-size: 4rem;
+  font-size:4rem;
   margin-bottom: 15px;
 }
 
@@ -150,6 +151,37 @@ h2 {
   max-width: 100%;
   border-radius: 10px;
 }
+
+/* =====================================================
+   Glass box for Hero 
+===================================================== */
+
+.glass-box {
+  background: linear-gradient(135deg, rgba(220, 10, 227, 0.2), rgba(255, 182, 193, 0.25));
+  border: 1px solid rgba(211, 22, 185, 0.4);
+  border-radius: 12px;
+  padding: 20px 30px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.2);
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60 px;
+}
+.glass-box h1 {
+  font-size: 1.4rem;
+}
+.hero-text.glass-box h1 {
+  font-size: 1.8rem !important;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-description {
+    margin-bottom: -50px !important;
+  }
+}
+
 
 
 
@@ -567,3 +599,5 @@ html {
     border-radius: 12px;
   }
 }
+
+
