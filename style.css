@@ -5,8 +5,26 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #d6cfd5;
-  color: #333;
+  color: #333
+  ;
 }
+.index-bg {
+  background: linear-gradient(
+    180deg,
+    rgb(252, 138, 208) 0%,    /* pink */
+    rgba(255, 192, 203, 1) 75%,   /* keep pink for most of the page */
+    rgba(221, 82, 209, 0.7) 90%,   /* orange near bottom */
+    rgba(180, 140, 255, 0.7) 100% /* purple at very bottom */
+  );
+  min-height: 100vh;
+}
+
+.page-blur {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  min-height: 100vh;
+}
+
 
 .container h2,
 section h2 {
@@ -159,9 +177,9 @@ h2 {
    FAQ SECTION
 ===================================================== */
 .faq details {
-  margin-bottom: 10px;
+  margin: 10px 20px; /* top/bottom = 10px, left/right = 20px */
   background: #fff;
-  padding: 10px;
+  padding: 20px;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -407,7 +425,7 @@ html {
 }
 
 
-
+/* **********************Stories Page starts here************************************ */
 
 /* =====================================================
    🔷 STORIES PAGE (Gallery Grid + Modal)
@@ -422,8 +440,17 @@ html {
    🔷 STORIES PAGE BACKGROUND
 ===================================================== */
 .stories-bg {
-  background: #ffffff; /* change to any color you want */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 140, 0, 0.45) 0%,     /* brighter orange */
+    rgba(180, 140, 255, 0.45) 100%  /* richer purple */
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  min-height: 100vh;
 }
+
+
 
 .google-style-heading {
   font-size: 1rem;
@@ -526,3 +553,17 @@ html {
   border: 1px solid rgba(255, 140, 0, 0.2);
 }
 
+
+/* =====================================================
+   📱 Mobile Grid Tweak for Stories Page
+===================================================== */
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
+  .photo-item img {
+    border-radius: 12px;
+  }
+}

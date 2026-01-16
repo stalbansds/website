@@ -22,7 +22,7 @@ function toggleMenu() {
 setTimeout(() => {
   const splash = document.getElementById("splash-screen");
   if (splash) splash.style.display = "none";
-}, 1000); // 1s video + 1s fade
+}, 1500); // 1s video + 1s fade
 
 
 
