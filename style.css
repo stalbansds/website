@@ -654,8 +654,15 @@ html {
 ===================================================== */
 @media (max-width: 600px) {
   .photo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
     gap: 12px;
+    padding: 10px;
+  }
+
+  .photo-item {
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
   }
 
   .photo-item img {
@@ -664,3 +671,36 @@ html {
 }
 
 
+
+
+
+/* =====================================================
+   🧊 Student Stories Grid — Uniform Image Sizing
+===================================================== */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.photo-item {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.05);
+}
